@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin.Notice.UploadNotice">
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/sample"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp"
+        android:layout_margin="5dp">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addImage"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_green2"
+                    android:padding="15dp"
+                    android:src="@drawable/baseline_add_photo_alternate_24">
+
+                </ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAC8C8"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:text="Select_Image"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor"
+                    />
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/notice_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Notice_title" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadNoticeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload_notice"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/green1"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+
+            />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_margin="5dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:scaleType="fitCenter"
+
+                android:id="@+id/noticeImageView"
+                />
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

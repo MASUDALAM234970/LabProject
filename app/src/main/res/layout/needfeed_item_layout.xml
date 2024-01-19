@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:padding="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <de.hdodenhof.circleimageview.CircleImageView
+
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/profile"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin College App"
+
+                 android:textSize="18sp"
+                android:layout_marginStart="10dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/deleteNoticebtn159"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-100dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/deleteNoticeTittle159"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ami tomay valo basi abong chirodin nase jabe ami tomay valo basi abong chirodin nase jabe"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            />
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/deleteNoticeImage159"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                 android:src="@drawable/photon"
+
+                />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

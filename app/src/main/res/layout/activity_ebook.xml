@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+
+    android:orientation="vertical"
+    tools:context=".Admin.Ebook.EbookActivity">
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/sample"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        android:layout_marginTop="100dp"
+        android:layout_margin="5dp">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addPdfCard"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="15dp"
+                    android:src="@drawable/baseline_picture_as_pdf_24">
+
+                </ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAC8C8"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:text="Select_PDF"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor"
+                    />
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/pdftextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No file Selected"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/textColor"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pdf_titletextbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="pdf_title" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addpdfbuttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PDF_Ebook"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:backgroundTint="@color/colorAccent"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

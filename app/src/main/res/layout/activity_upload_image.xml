@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Admin.Gallary.UploadImage">
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/sample"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        android:layout_marginTop="100dp"
+        android:layout_margin="5dp">
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/addGallery_Image"
+            android:layout_width="130dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:cardElevation="5dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/circle_yellow"
+                    android:padding="15dp"
+                    android:src="@drawable/baseline_add_photo_alternate_24">
+
+                </ImageView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#EAC8C8"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:text="Select_Image"
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/textColor"
+                    />
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/image_category"
+            android:spinnerMode="dropdown"
+            android:layout_gravity="center"
+            android:layout_marginVertical="16dp"
+            >
+
+
+        </Spinner>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/uploadImageBtn123"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload_Image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/colorAccent"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+
+            />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_margin="10dp"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:id="@+id/galleryImageView"
+                />
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

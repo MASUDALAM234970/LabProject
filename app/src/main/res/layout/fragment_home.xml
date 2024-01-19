@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+
+
+                android:orientation="horizontal"
+                android:padding="7dp">
+
+
+                <TextView
+                    android:id="@+id/text123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:ellipsize="marquee"
+                    android:fadingEdge="horizontal"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:textColor="#222425"
+                    android:text="hellofdsgaglkasdglkasgjoieraygeroerag"
+                    android:textSize="15sp"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:id="@+id/cardView369"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_height="wrap_content">
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/image_slider101010"
+                        android:layout_width="wrap_content"
+                        android:layout_height="180dp"
+                        app:iss_auto_cycle="true"
+                        app:iss_period="3000"
+                        app:iss_delay="1000"
+                        app:iss_corner_radius="10"
+                        app:iss_text_align="CENTER"
+
+                        />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="The GPA TALE"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+                android:textStyle="italic"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="36dp"
+                android:layout_marginEnd="5dp"
+                android:text="@string/about1"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/title_size"
+
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="36dp"
+                android:background="@color/teal_200"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Departments"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_size" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="8dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="5dp"
+                            android:text="CSE"
+                            android:textAlignment="center"
+                            android:textColor="@color/titleColor"
+                            android:textSize="@dimen/title_size" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/grey" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:text="Contract Details"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="italic"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Shyamoli Textile Engineering College (STEC)"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="36dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Mohammadpur 1204, Dhaka Bangladesh"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/image_view_maps"
+                    android:layout_width="330dp"
+                    android:layout_height="330dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="100dp"
+                    android:src="@drawable/maps" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

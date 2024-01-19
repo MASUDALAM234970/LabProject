@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".Admin.ImageSider.UploadImageSiderActivity">
+
+    <include
+        android:id="@+id/main_page_toolbar"
+        layout="@layout/sample"
+        >
+    </include>
+
+    <LinearLayout
+        android:layout_below="@id/main_page_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/lavender_border"
+        android:padding="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="23dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/lavender_border"
+            android:id="@+id/uploadImage789"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/uploadCaption789"
+                android:layout_weight="0.6"
+                android:background="@drawable/lavender_border"
+                android:padding="16dp"
+                android:hint="Add a caption..."/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadButton789"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="@color/green1"
+                android:src="@drawable/done"
+                app:tint = "@color/white"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
